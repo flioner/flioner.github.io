@@ -14,11 +14,11 @@ export default function FirstPost() {
 
         <h1>My Work</h1>
 
-        <Image
+        <Image layout="responsive"
             priority
-            src="/images/clothing.png"
-            height={1000}
-            width={1000}
+            src="v1642298835/sample.jpg"
+            height={"400px"}
+            width={"600px"}
         />
 
         <h2>
