@@ -21,6 +21,8 @@ export default function FirstPost() {
             width={"600px"}
         />
 
+        <img src='https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642298835/sample.jpg'/>
+
         <h2>
           <Link href="/">
             <a>Back to home</a>
