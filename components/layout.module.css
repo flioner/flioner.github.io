@@ -11,7 +11,7 @@
 }
 
 .backToHome {
-  position:fixed;
+  position: fixed;
   right: 50px;
   bottom: 30px;
   background-color: rgb(170, 170, 170);
@@ -34,5 +34,3 @@
 .backToHomeText:hover {
   color: rgb(255, 255, 255);
 }
-
-

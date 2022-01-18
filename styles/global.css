@@ -2,8 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: TCM,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: TCM, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 20px;
 }
@@ -13,9 +13,8 @@ body {
   src: url("/fonts/TCM.TTF") format("truetype");
 }
 
-
 * {
-  box-sizing:content-box;
+  box-sizing: content-box;
 }
 
 a {
