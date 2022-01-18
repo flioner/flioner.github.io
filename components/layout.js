@@ -74,8 +74,7 @@ export default function Layout({ children, home, blackbg }) {
             <div className={utilStyles.dropup}>
               <button className={utilStyles.dropbtn2}>
                 <img
-                  width={36}
-                  height={36}
+                  className={utilStyles.icon}
                   src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642499848/Button_Icon_00000_ulma6w.jpg"
                 />
               </button>
