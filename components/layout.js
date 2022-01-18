@@ -21,18 +21,22 @@ export default function Layout({ children, home, blackbg}) {
 
       <header className={styles.header}>
         {home && (
-          <>
             <h1 className={utilStyles.headingL}>{name}</h1>
-          </>
         ) }
       </header>
 
       <main>{children}</main>
 
       {!home && (
-        <div className={styles.backToHome}>
+          <div>
 
-        </div>
+          </div>
+
+          /*<Link href="/">
+            <div className={styles.backToHome}>
+            <a className={styles.backToHomeText}>Back to home</a>
+            </div>
+          </Link> */      
       )}
     </div>
   )

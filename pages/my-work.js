@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
 
 
 export default function FirstPost() {
@@ -9,26 +10,21 @@ export default function FirstPost() {
       <Layout>
           
         <Head>
-          <title>Uwuntu</title>
+          <title>Fabian Lioner - My Work</title>
         </Head>
 
-        <h1>My Work</h1>
-
-        <Image layout="responsive"
-            priority
-            src="v1642298835/sample.jpg"
-            height={"400px"}
-            width={"600px"}
-        />
-
-        <img src='https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642298835/sample.jpg'/>
-
-        <h2>
-          <Link href="/">
-            <a>Back to home</a>
-          </Link>
-        </h2>
-
+        <div className={utilStyles.menu2}>
+          <div className={utilStyles.menu4}>
+            My Work
+          </div>
+          <div className={utilStyles.menu3}>
+            <Link href="/">Homepage</Link>
+            <Link href="about-me">About Me</Link>
+            <Link href="contact">Contact</Link>
+          </div>
+        </div>
+      
       </Layout>
     )
   }
+

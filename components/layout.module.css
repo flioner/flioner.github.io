@@ -11,6 +11,28 @@
 }
 
 .backToHome {
-  margin: 3rem 0 0;
+  position:fixed;
+  right: 50px;
+  bottom: 30px;
+  background-color: rgb(170, 170, 170);
+  padding: 6px 12px;
+  border-radius: 15px;
 }
+
+.backToHome:hover {
+  background-color: rgb(136, 136, 136);
+  cursor: pointer;
+}
+
+.backToHomeText {
+  color: white;
+  font-weight: 400;
+  font-size: 27px;
+  font-family: "TCM";
+}
+
+.backToHomeText:hover {
+  color: rgb(255, 255, 255);
+}
+
 

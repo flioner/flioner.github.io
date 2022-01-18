@@ -7,10 +7,35 @@
     "start": "next start"
   },
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.4",
+    "@headlessui/react": "^1.4.3",
+    "3d-react-carousal": "^4.0.2",
+    "embla-carousel-react": "^6.1.0",
+    "flickity": "^2.3.0",
     "next": "latest",
+    "pure-react-carousel": "^1.27.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-flickity-component": "^3.6.2",
+    "react-hover-video-player": "^9.4.0",
+    "react-icons": "^4.3.1",
+    "react-iframe": "^1.8.0",
+    "react-items-carousel": "^2.8.0",
+    "react-leaf-carousel": "^3.0.0",
+    "react-multi-carousel": "^2.6.5",
+    "react-owl-carousel": "^2.3.3",
     "react-player": "^2.9.0",
-    "sass": "^1.48.0"
+    "react-responsive-carousel": "^3.2.22",
+    "react-responsive-embed": "^2.1.0",
+    "react-router-dom": "^6.2.1",
+    "react-slick": "^0.28.1",
+    "react-swipe": "^6.0.4",
+    "rerousel": "^0.1.9",
+    "rsuite": "^5.5.0",
+    "sass": "^1.48.0",
+    "swiper": "^7.4.1"
+  },
+  "devDependencies": {
+    "react-alice-carousel": "^2.5.1"
   }
 }

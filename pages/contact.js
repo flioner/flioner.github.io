@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import React from 'react'
 import ReactPlayer from 'react-player'
+import utilStyles from '../styles/utils.module.css'
+
 
 
 export default function FirstPost() {
@@ -11,19 +13,21 @@ export default function FirstPost() {
       <Layout>
           
         <Head>
-          <title>Uwuntu</title>
+          <title>Fabian Lioner - Contact</title>
         </Head>
 
-        <h1>First Post</h1>
-
-      <ReactPlayer url='https://youtu.be/dQw4w9WgXcQ' />
-
-      <h3>
-          <Link href="/">
-            <a>Back to home</a>
-          </Link>
-      </h3>
+        <div className={utilStyles.menu2}>
+        <div className={utilStyles.menu4}>
+        Contact
+        </div>
+        <div className={utilStyles.menu3}>
+          <Link href="/">Homepage</Link>
+          <Link href="about-me">About Me</Link>
+        </div>
+        </div>
   
       </Layout>
     )
   }
+
+//<ReactPlayer url='https://youtu.be/dQw4w9WgXcQ' />
