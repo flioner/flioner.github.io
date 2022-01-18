@@ -23,11 +23,11 @@ a {
 }
 
 a:hover {
-  color: #ff076e;
+  color: rgb(66, 66, 66);
   text-decoration: none;
 }
 
 img {
-  max-width: 200%;
+  max-width: 100%;
   display: block;
 }
