@@ -46,18 +46,19 @@
     z-index: 2;
   }
   .icon {
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
   /* Drop Up Button */
   .dropbtn2 {
     background-color: #dfdfdf;
     color: rgb(71, 71, 71);
     border: none;
+    padding: px;
     padding: 7px;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
   }
   /* Drop Up Container */
   .dropupcontent {
@@ -65,8 +66,8 @@
     position: absolute;
     bottom: 50px;
     background-color: #dfdfdf;
-    min-width: 5px;
-    padding: 5px 6px;
+    min-width: 4px;
+    padding: 10px 1px;
     margin-bottom: -47px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
@@ -138,6 +139,9 @@
   .headingLg {
     font-size: 1.4rem;
   }
+  .floating {
+    margin-right: -8px;
+  }
   /* Drop Down Button */
   .dropbtn {
     font-size: 1.1rem;
@@ -175,6 +179,32 @@
   .headingLg {
     font-size: 1.6rem;
   }
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+  /* Drop Up Button */
+  .dropbtn2 {
+    background-color: #dfdfdf;
+    color: rgb(71, 71, 71);
+    border: none;
+    padding: 7px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  /* Drop Up Container */
+  .dropupcontent {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #dfdfdf;
+    min-width: 5px;
+    padding: 5px 6px;
+    margin-bottom: -47px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  }
   /* Drop Down Button */
   .dropbtn {
     font-size: 1.2rem;
@@ -211,29 +241,7 @@
     font-size: 1.7rem;
   }
   .floating {
-    margin-right: 0px;
-  }
-  .icon {
-    width: 36px;
-    height: 36px;
-  }
-  /* Drop Up Button */
-  .dropbtn2 {
-    width: 36px;
-    height: 36px;
-    padding: 7px;
-  }
-  /* Drop Up Container */
-  .dropupcontent {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    background-color: #dfdfdf;
-    min-width: 20px;
-    padding: 15px 12px;
-    margin-bottom: -47px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    margin-right: -10px;
   }
   /* Drop Down Button */
   .dropbtn {
@@ -266,6 +274,27 @@
   /* Parameters for a BIG Screen */
   .floating {
     margin-right: -25px;
+  }
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+  .dropbtn2 {
+    width: 36px;
+    height: 36px;
+    padding: 7px;
+  }
+  /* Drop Up Container */
+  .dropupcontent {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #dfdfdf;
+    min-width: 20px;
+    padding: 15px 12px;
+    margin-bottom: -47px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
