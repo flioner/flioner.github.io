@@ -22,7 +22,7 @@ export default function Home() {
           pausedOverlay={
             <img
               src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
-              style={{ width: "100.2%", height: "100.2%", objectFit: "cover" }}
+              style={{ width: "100.2%", height: "100.5%", objectFit: "cover" }}
             />
           }
           hoverOverlay={

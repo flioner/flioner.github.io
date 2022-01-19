@@ -6,6 +6,7 @@ import Link from "next/link";
 import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useState } from "react";
 
 const name = "Fabian Lioner";
 export const siteTitle = "Fabian Lioner";
@@ -27,6 +28,11 @@ const theme = createTheme({
 });
 
 export default function Layout({ children, home, blackbg }) {
+  const [isActive, setActive] = useState(false);
+
+  const handleToggle = () => {
+    setActive(!isActive);
+  };
   return (
     <div className={styles.container}>
       <Head>
@@ -65,33 +71,40 @@ export default function Layout({ children, home, blackbg }) {
             </div>
             <div className={utilStyles.dropdown}>
               <button className={utilStyles.dropbtn}>
-                <a href="about-me">Contact</a>
+                <a href="contact">Contact</a>
               </button>
             </div>
           </nav>
-
           <div className={utilStyles.floating}>
-            <div className={utilStyles.dropup}>
-              <button className={utilStyles.dropbtn2}>
+            <div className={utilStyles.dropdown2}>
+              <button onClick={handleToggle} className={utilStyles.dropbtn2}>
                 <img
                   className={utilStyles.icon}
-                  src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642499848/Button_Icon_00000_ulma6w.jpg"
+                  src=" https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642575539/Volume_Icon_00000_cd3dxz.jpg"
                 />
               </button>
 
-              <div className={utilStyles.dropupcontent}>
-                <ThemeProvider theme={theme}>
-                  <Box height={200}>
-                    <Slider
-                      size="small"
-                      defaultValue={70}
-                      aria-label="Small"
-                      valueLabelDisplay="auto"
-                      orientation="vertical"
-                      color="neutral"
-                    />
-                  </Box>
-                </ThemeProvider>
+              <div
+                className={
+                  isActive
+                    ? utilStyles.dropdowncontent3
+                    : utilStyles.dropdowncontent2
+                }
+              >
+                <div>
+                  <ThemeProvider theme={theme}>
+                    <Box height={200}>
+                      <Slider
+                        size="small"
+                        defaultValue={70}
+                        aria-label="Small"
+                        valueLabelDisplay="auto"
+                        orientation="vertical"
+                        color="neutral"
+                      />
+                    </Box>
+                  </ThemeProvider>
+                </div>
               </div>
             </div>
           </div>
@@ -103,3 +116,16 @@ export default function Layout({ children, home, blackbg }) {
     </div>
   );
 }
+
+/*                <ThemeProvider theme={theme}>
+                  <Box height={200}>
+                    <Slider
+                      size="small"
+                      defaultValue={70}
+                      aria-label="Small"
+                      valueLabelDisplay="auto"
+                      orientation="vertical"
+                      color="neutral"
+                    />
+                  </Box>
+                </ThemeProvider>*/

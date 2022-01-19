@@ -32,45 +32,24 @@
   padding-bottom: 10px;
 }
 
-/* Parameters for a Tiny Screen */
+/* ------------------------- */
+/* RESPONISVE TEXT BEGINNING */
+/* ------------------------- */
+
+/* ------------------- */
+/*   TINY SCREEN SIZE  */
+/* ------------------- */
 @media (min-width: 10px) {
   .headingLg {
-    font-size: 1.3rem;
+    font-size: calc(1rem + 0.9vw);
     line-height: 1.4;
     margin: 1rem 0;
   }
   .floating {
     position: relative;
     float: right;
-    margin-right: 0px;
+    margin-right: 47px;
     z-index: 2;
-  }
-  .icon {
-    width: 15px;
-    height: 15px;
-  }
-  /* Drop Up Button */
-  .dropbtn2 {
-    background-color: #dfdfdf;
-    color: rgb(71, 71, 71);
-    border: none;
-    padding: px;
-    padding: 7px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-  }
-  /* Drop Up Container */
-  .dropupcontent {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    background-color: #dfdfdf;
-    min-width: 4px;
-    padding: 10px 1px;
-    margin-bottom: -47px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   }
   /* Drop Down Button */
   .dropbtn {
@@ -106,16 +85,20 @@
     flex-direction: row;
     justify-content: center;
     column-gap: 25px;
-    padding-bottom: 20px;
+    padding-bottom: calc(2.5vw);
   }
   .menu4 {
-    font-size: 0.9rem;
+    font-size: calc(10px + 1vw);
+    line-height: 1;
+    font-weight: 600;
+  }
+  .menu5 {
     line-height: 1;
     font-weight: 600;
   }
   .menu3 {
-    font-size: 0.7rem;
-    line-height: 1.5;
+    font-size: 2.7vw;
+    line-height: 1;
     font-weight: 600;
     display: flex;
     flex-direction: row;
@@ -126,7 +109,7 @@
     width: max-content;
     position: absolute;
     bottom: 7%;
-    font-size: 0.7rem;
+    font-size: 3vw;
     line-height: 1;
     font-weight: 600;
     background-color: white;
@@ -134,17 +117,16 @@
     box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
   }
 }
-/* Parameters for a Small Screen */
+/* ------------------- */
+/*  SMALL SCREEN SIZE  */
+/* ------------------- */
 @media (min-width: 600px) {
   .headingLg {
-    font-size: 1.4rem;
-  }
-  .floating {
-    margin-right: -8px;
+    font-size: calc(1rem + 0.9vw);
   }
   /* Drop Down Button */
   .dropbtn {
-    font-size: 1.1rem;
+    font-size: calc(1rem + 0.2vw);
   }
   /* Drop Down Links (Font-Size) */
   .dropdowncontent a {
@@ -155,59 +137,26 @@
     min-width: 290px;
   }
   .menu {
-    padding-bottom: 25px;
+    font-size: 2.5vw;
+    padding-bottom: calc(2.5vw);
     column-gap: 27px;
   }
-  .menu4 {
-    font-size: 1rem;
-  }
   .menu3 {
-    font-size: 0.8rem;
+    font-size: calc(10px + 1vw);
     column-gap: 16px;
   }
   .videoMenu {
-    font-size: 0.8rem;
+    font-size: 2.5vw;
     column-gap: 25px;
   }
 }
 
-/* Parameters for a Medium Screen */
+/* ------------------- */
+/* MEDIUM SCREEN SIZE  */
+/* ------------------- */
 @media (min-width: 750px) {
-  .floating {
-    margin-right: -5px;
-  }
   .headingLg {
-    font-size: 1.6rem;
-  }
-  .icon {
-    width: 25px;
-    height: 25px;
-  }
-  /* Drop Up Button */
-  .dropbtn2 {
-    background-color: #dfdfdf;
-    color: rgb(71, 71, 71);
-    border: none;
-    padding: 7px;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-  }
-  /* Drop Up Container */
-  .dropupcontent {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    background-color: #dfdfdf;
-    min-width: 5px;
-    padding: 5px 6px;
-    margin-bottom: -47px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  }
-  /* Drop Down Button */
-  .dropbtn {
-    font-size: 1.2rem;
+    font-size: calc(1rem + 0.9vw);
   }
   /* Drop Down Links (Font-Size) */
   .dropdowncontent a {
@@ -218,30 +167,76 @@
     min-width: 320px;
   }
   .menu {
-    padding-bottom: 35px;
     column-gap: 32px;
   }
   .menu4 {
-    font-size: 1.2rem;
+    font-size: calc(10px + 1.2vw);
+  }
+  .menu5 {
+    font-size: calc(10px + 1.7vw);
   }
   .menu3 {
-    font-size: 1rem;
+    font-size: calc(10px + 1vw);
     line-height: 1.5;
     font-weight: 400;
     column-gap: 20px;
   }
   .videoMenu {
-    font-size: 0.9rem;
+    font-size: 2.5vw;
+  }
+}
+/* ------------------- */
+/*   BIG SCREEN SIZE   */
+/* ------------------- */
+@media (min-width: 1000px) {
+  .menu3 {
+    font-size: 1rem;
+    column-gap: 15px;
+  }
+}
+/* ------------------- */
+/*   BIGGER SCREEN SIZE   */
+/* ------------------- */
+@media (min-width: 1270px) {
+  .headingLg {
+    font-size: calc(1rem + 0.9vw);
+  }
+  /* Drop Down Button */
+  .dropbtn {
+    font-size: calc(10px + 1vw);
+  }
+  /* Drop Down Links (Font-Size) */
+  .dropdowncontent a {
+    font-size: 1.2rem;
+  }
+  /* Drop Down Container */
+  .dropdowncontent {
+    min-width: 350px;
+  }
+  .menu {
+    padding-bottom: 2.7vw;
+    column-gap: 35px;
+  }
+  .menu4 {
+    font-size: 2vw;
+  }
+  .menu5 {
+    font-size: 2.5vw;
+  }
+  .menu3 {
+    font-size: 1.6vw;
+  }
+  .videoMenu {
+    font-size: 2vw;
   }
 }
 
-@media (min-width: 1270px) {
-  /* Parameters for a BIG Screen */
+/* ------------------- */
+/* GIANT SCREEN SIZE   */
+/* ------------------- */
+@media (min-width: 1500px) {
   .headingLg {
     font-size: 1.7rem;
-  }
-  .floating {
-    margin-right: -10px;
   }
   /* Drop Down Button */
   .dropbtn {
@@ -262,41 +257,29 @@
   .menu4 {
     font-size: 1.5rem;
   }
+  .menu5 {
+    font-size: 1.9rem;
+  }
   .menu3 {
     font-size: 1.2rem;
-    column-gap: 1s5px;
+    column-gap: 15px;
+    line-height: 1.5;
   }
   .videoMenu {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
-@media (min-width: 1500px) {
-  /* Parameters for a BIG Screen */
+/* ------------------- */
+/* Outside Elements */
+/* ------------------- */
+@media (min-width: 98rem) {
   .floating {
-    margin-right: -25px;
-  }
-  .icon {
-    width: 36px;
-    height: 36px;
-  }
-  .dropbtn2 {
-    width: 36px;
-    height: 36px;
-    padding: 7px;
-  }
-  /* Drop Up Container */
-  .dropupcontent {
-    display: none;
-    position: absolute;
-    bottom: 50px;
-    background-color: #dfdfdf;
-    min-width: 20px;
-    padding: 15px 12px;
-    margin-bottom: -47px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+    margin-right: -20px;
   }
 }
+/* ------------------- */
+/* RESPONISVE TEXT END */
+/* ------------------- */
 
 /* DROPDOWN BUTTON*/
 
@@ -327,6 +310,73 @@
 
 /* END OF DROPDOWN BUTTON*/
 
+/* CLICKABLE DROP */
+.icon {
+  height: 34px;
+  width: 34px;
+}
+/* Dropdown Button */
+.dropbtn2 {
+  background-color: #f1f1f1;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn2:hover {
+  display: block;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: fixed;
+  display: inline-block;
+  bottom: 10px;
+  z-index: 2;
+}
+
+.dropdown3 {
+  position: relative;
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdowncontent2 {
+  display: none;
+}
+
+.dropdowncontent3 {
+  display: block;
+  position: absolute;
+  bottom: 55px;
+  background-color: #f1f1f1;
+  min-width: 5px;
+  padding: 17px 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.dropdowncontent2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdowncontent2 a:hover {
+  background-color: #ddd;
+}
+.show {
+  display: block;
+}
 /* DROPUP BUTTON */
 
 /* The container <div> - needed to position the dropup content */

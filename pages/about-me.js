@@ -14,7 +14,7 @@ export default function FirstPost() {
       </Head>
 
       <div className={utilStyles.menu2}>
-        <div className={utilStyles.menu4}>About Me</div>
+        <div className={utilStyles.menu5}>About Me</div>
         <div className={utilStyles.menu3}>
           <Link href="/">Homepage</Link>
           <Link href="contact">Contact</Link>
