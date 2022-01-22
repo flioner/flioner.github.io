@@ -51,6 +51,7 @@
     margin-right: 47px;
     z-index: 2;
   }
+
   /* Drop Down Button */
   .dropbtn {
     color: rgb(116, 116, 116);
@@ -79,6 +80,48 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
     z-index: 2;
   }
+  .imgVer {
+    width: 100%;
+    max-width: 25rem;
+    height: 100%;
+    max-height: 37.5rem;
+  }
+
+  .imgHor {
+    width: 60vw;
+    max-width: 37.5rem;
+    height: 40vw;
+    max-height: 25rem;
+  }
+  .prgph {
+    padding-left: 3%;
+    max-width: 62%;
+    font-size: 2.5vw;
+    color: #666;
+  }
+  .nameTag {
+    font-weight: 600;
+    font-size: 3vw;
+    line-height: 0;
+    color: black;
+  }
+  .yt {
+    height: 7vw;
+    padding-top: 1vw;
+    opacity: 20%;
+  }
+
+  .ig {
+    height: 9vw;
+    opacity: 20%;
+  }
+
+  .gm {
+    height: 7vw;
+    padding-top: 1vw;
+    opacity: 20%;
+  }
+
   .menu {
     line-height: 0.5;
     display: flex;
@@ -106,15 +149,22 @@
     column-gap: 12px;
   }
   .videoMenu {
+    display: inline-block;
     width: max-content;
     position: absolute;
-    bottom: 7%;
+    bottom: 20px;
     font-size: 3vw;
-    line-height: 1;
     font-weight: 600;
-    background-color: white;
+    line-height: 1;
     padding: 12px 10px;
-    box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    color: #868686;
+    background-color: white;
+    max-height: 100%;
+    z-index: 2;
+  }
+  .videoMenu:hover {
+    color: rgb(66, 66, 66);
+    cursor: pointer;
   }
 }
 /* ------------------- */
@@ -147,7 +197,6 @@
   }
   .videoMenu {
     font-size: 2.5vw;
-    column-gap: 25px;
   }
 }
 
@@ -166,6 +215,9 @@
   .dropdowncontent {
     min-width: 320px;
   }
+  .nameTag {
+    padding-top: 2.5%;
+  }
   .menu {
     column-gap: 32px;
   }
@@ -183,6 +235,7 @@
   }
   .videoMenu {
     font-size: 2.5vw;
+    bottom: 10%;
   }
 }
 /* ------------------- */
@@ -192,6 +245,26 @@
   .menu3 {
     font-size: 1rem;
     column-gap: 15px;
+  }
+  .prgph {
+    font-size: 1.3rem;
+  }
+  .nameTag {
+    font-size: 1.5rem;
+  }
+  .yt {
+    height: 70px;
+    padding-top: 1.7vw;
+  }
+
+  .ig {
+    padding-top: 0.7vw;
+    height: 95px;
+  }
+
+  .gm {
+    height: 75px;
+    padding-top: 1vw;
   }
 }
 /* ------------------- */
@@ -212,6 +285,12 @@
   /* Drop Down Container */
   .dropdowncontent {
     min-width: 350px;
+  }
+  .prgph {
+    font-size: 1.4rem;
+  }
+  .nameTag {
+    padding-top: 2%;
   }
   .menu {
     padding-bottom: 2.7vw;
@@ -250,6 +329,12 @@
   .dropdowncontent {
     min-width: 350px;
   }
+  .prgph {
+    font-size: 1.5rem;
+  }
+  .nameTag {
+    font-size: 1.7rem;
+  }
   .menu {
     padding-bottom: 40px;
     column-gap: 35px;
@@ -266,7 +351,7 @@
     line-height: 1.5;
   }
   .videoMenu {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 /* ------------------- */
@@ -446,6 +531,12 @@
 .paddingTop {
   padding-top: 20px;
 }
+.paddingBottom {
+  padding-bottom: 20px;
+}
+.paddingBoth {
+  padding: 20px 0px;
+}
 
 .paddingVideo {
   padding-bottom: 20px;
@@ -464,19 +555,93 @@
   font-size: 1.2rem;
 }
 
-.portraitPreviewContainer {
+.player {
+  position: relative;
+  width: fit-content;
+  height: 100%;
+}
+
+.thumb {
+  display: inline-block;
+  height: max-content;
+}
+
+.thumb2 {
+  display: none;
+}
+.playercont {
+  display: none;
+}
+.playercont2 {
+  display: inline-block;
+  opacity: 100;
+}
+
+.flex {
   display: flex;
-  flex-direction: row;
-  max-width: 100%;
+  padding: 15px 0px;
 }
 
-.portraitPreviewContainer div {
-  flex: 1;
-  border: 2px solid blue;
-  object-fit: contain;
-  max-width: 100%;
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.portraitPreviewContainer div img {
-  object-fit: contain;
+.socials {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 25%;
+}
+
+.yt:hover {
+  opacity: 100%;
+}
+
+.ig:hover {
+  opacity: 100%;
+}
+
+.gm:hover {
+  opacity: 100%;
+}
+
+.videoContainer {
+  display: flex;
+  position: relative;
+}
+
+.videoContL {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  transition: width 0.7s;
+}
+
+.videoContL:hover {
+  width: 100%;
+}
+.videoContR {
+  position: absolute;
+  width: 70%;
+  left: 30%;
+  transition: width 0.7s, left 0.7s;
+}
+
+.videoContR:hover {
+  width: 100%;
+  left: 0%;
+}
+.videoBoxR {
+  position: absolute;
+  width: 30%;
+  left: 70%;
+  height: 100%;
+  background-color: #ececec;
+}
+
+.videoBoxL {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  background-color: #ececec;
 }

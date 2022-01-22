@@ -2,9 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout, { siteTitle } from "../components/layout";
+import { value } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
 import React, { useEffect, useState } from "react";
+import ReactPlayer from "react-player";
+import Video from "../components/video2";
 
 export default function Home() {
   return (
@@ -13,52 +16,28 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 
-      <div className={utilStyles.paddingVideo}>
-        <HoverVideoPlayer
-          videoSrc="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
-          loop={true}
-          muted={true}
-          volume={0.2}
-          pausedOverlay={
-            <img
-              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
-              style={{ width: "100.2%", height: "100.5%", objectFit: "cover" }}
-            />
-          }
-          hoverOverlay={
-            <div className={utilStyles.videoMenu}>
-              <Link href="work/Music-Visualizers-And-3D-Work">
-                Music Visualizers And 3D Work
-              </Link>
-            </div>
-          }
-        />
+      <div className={utilStyles.paddingBottom}>
+        <Video
+          videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
+          thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
+          pagelink="/work/Music-Visualizers-And-3D-Work"
+          descr="Music Visualizers And 3D Work"
+        />{" "}
       </div>
 
-      <div className={utilStyles.paddingVideo}>
-        <HoverVideoPlayer
-          videoSrc="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642415771/Brunch_OFF_Studios_Aftermovie_dxqklb.mp4"
-          loop={true}
-          muted={true}
-          volume={0.2}
-          pausedOverlay={
-            <img
-              src="https://res.cloudinary.com/ds5o5hlrl/image/upload/v1642470547/Brunch_Off_Studios_Aftermovie_haabuj.jpg"
-              style={{ width: "100%", height: "100.2%", objectFit: "cover" }}
-            />
-          }
-          hoverOverlay={
-            <div className={utilStyles.videoMenu}>
-              <Link href="work/Live-Music-Video-Coverage">
-                Live Music Video Coverage
-              </Link>
-            </div>
-          }
+      <div className={utilStyles.paddingBottom}>
+        <Video
+          className={utilStyles.v720}
+          videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642415771/Brunch_OFF_Studios_Aftermovie_dxqklb.mp4"
+          thumburl="https://res.cloudinary.com/ds5o5hlrl/image/upload/v1642470547/Brunch_Off_Studios_Aftermovie_haabuj.jpg"
+          pagelink="/work/Live-Music-Video-Coverage"
+          descr="Live Music Video Coverage"
         />
       </div>
     </Layout>
   );
 }
+
 /*
       <div className={utilStyles.portraitPreviewContainer}>
         <div>

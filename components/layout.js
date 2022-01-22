@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
+import React from "react";
 
 const name = "Fabian Lioner";
 export const siteTitle = "Fabian Lioner";
@@ -27,11 +28,15 @@ const theme = createTheme({
   },
 });
 
-export default function Layout({ children, home, blackbg }) {
+export default function Layout({ children, home }) {
   const [isActive, setActive] = useState(false);
-
   const handleToggle = () => {
     setActive(!isActive);
+  };
+
+  const [value, setValue] = React.useState(30);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
   };
   return (
     <div className={styles.container}>
@@ -96,7 +101,8 @@ export default function Layout({ children, home, blackbg }) {
                     <Box height={200}>
                       <Slider
                         size="small"
-                        defaultValue={70}
+                        value={value}
+                        onChange={handleChange}
                         aria-label="Small"
                         valueLabelDisplay="auto"
                         orientation="vertical"
