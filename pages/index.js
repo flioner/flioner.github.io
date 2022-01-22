@@ -5,6 +5,8 @@ import utilStyles from "../styles/utils.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
 import React, { useEffect, useState } from "react";
 import Video from "../components/video2";
+import Photos from "../components/photos";
+import Socials from "../components/socials";
 
 export default function Home() {
   const [isShown, setIsShown] = useState(false);
@@ -17,17 +19,18 @@ export default function Home() {
         <a href="/work/Music-Visualizers-And-3D-Work">
           <Video
             videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
-            thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
+            thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D%20Thumbnails/3D_Visualizer_Thumb_hehg2a.jpg"
             pagelink="/work/Music-Visualizers-And-3D-Work"
             descr="Music Visualizers And 3D Work"
           />
         </a>
       </div>
+
       <div className={utilStyles.paddingBottom}>
         <a href="/work/Live-Music-Video-Coverage">
           <Video
             videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642415771/Brunch_OFF_Studios_Aftermovie_dxqklb.mp4"
-            thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642823570/Brunch_Off_Studios_Aftermovie_glviut.jpg"
+            thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642823570/Live%20Thumbs/Brunch_Off_Studios_Aftermovie_glviut.jpg"
             pagelink="/work/Live-Music-Video-Coverage"
             descr="Live Music Video Coverage"
           />
@@ -46,28 +49,39 @@ export default function Home() {
             }
           >
             <Link href="/work/Portrait-And-Fashion-Photography">
-              Portrait & Fashion Photography
+              Concert Photography
             </Link>
           </div>
           <a
-            href="/work/Portrait-And-Fashion-Photography"
+            href="/work/Concert-Photography"
             className={
-              isShown ? utilStyles.portrait6to4_2 : utilStyles.portrait6to4
+              isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
             }
           >
-            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642326044/moda_3_l1uu2v.jpg" />
+            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826512/Concert%20Photography/B_W1-min_vhfjb3.jpg" />
           </a>
 
           <a
-            href="/work/Portrait-And-Fashion-Photography"
+            href="/work/Concert-Photography"
             className={
-              isShown ? utilStyles.portrait4to6_2 : utilStyles.portrait4to6
+              isShown ? utilStyles.portraitEqualsC : utilStyles.portraitEqualsC2
             }
           >
-            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642378891/Moda_1_wyt57z.jpg" />
+            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826512/Concert%20Photography/B_W2-min_fgskmb.jpg" />
+          </a>
+          <a
+            href="/work/Concert-Photography"
+            className={
+              isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
+            }
+          >
+            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826522/Concert%20Photography/b_w4-min_nxhx9q.jpg" />
           </a>
         </div>
       </div>
+
+      <Photos></Photos>
+      <Socials></Socials>
     </Layout>
   );
 }

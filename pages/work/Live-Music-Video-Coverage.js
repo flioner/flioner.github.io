@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import React from "react";
 import utilStyles from "../../styles/utils.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
+import Socials from "../../components/socials";
 
 export default function FirstPost() {
   return (
@@ -37,7 +38,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642823570/Brunch_Off_Studios_Aftermovie_glviut.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642823570/Live%20Thumbs/Brunch_Off_Studios_Aftermovie_glviut.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -65,7 +66,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817223/Marte_Aftermovie_Thumb_00066_zw7zgx.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817223/Live%20Thumbs/Marte_Aftermovie_Thumb_00066_zw7zgx.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -93,7 +94,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817460/Tercer_Festival_Aftermovie_00532_cus3ns.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817460/Live%20Thumbs/Tercer_Festival_Aftermovie_00532_cus3ns.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -121,7 +122,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817869/Sofish_Corazonada_Thumb_00758_gwfrdg.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817869/Live%20Thumbs/Sofish_Corazonada_Thumb_00758_gwfrdg.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -132,6 +133,7 @@ export default function FirstPost() {
           />
         </div>
       </div>
+      <Socials></Socials>
     </Layout>
   );
 }

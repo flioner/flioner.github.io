@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import React, { useState } from "react";
 import utilStyles from "../../styles/utils.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
+import Socials from "../../components/socials";
 
 export default function FirstPost() {
   return (
@@ -37,7 +38,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D%20Thumbnails/3D_Visualizer_Thumb_hehg2a.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -56,13 +57,13 @@ export default function FirstPost() {
           </div>
           <HoverVideoPlayer
             className={utilStyles.videoContR}
-            videoSrc="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642811651/Marte_Turista_3D_gyvjqn.mp4"
+            videoSrc="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642833897/Marte_Turista_3D_Lyrics_vgbeyw.mp4"
             loop={true}
             muted={true}
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642809482/marte_thumb_03102_m6ndkh.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642809482/3D%20Thumbnails/marte_thumb_03102_m6ndkh.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -89,7 +90,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642809482/Music_Visualizer_00523_eaxj0l.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642809482/3D%20Thumbnails/Music_Visualizer_00523_eaxj0l.jpg"
                 style={{
                   width: "100%",
                   height: "100%",
@@ -100,6 +101,7 @@ export default function FirstPost() {
           />
         </div>
       </div>
+      <Socials></Socials>
     </Layout>
   );
 }
