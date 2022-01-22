@@ -37,7 +37,7 @@ export default function FirstPost() {
             volume={0.2}
             pausedOverlay={
               <img
-                src="https://res.cloudinary.com/ds5o5hlrl/image/upload/v1642470547/Brunch_Off_Studios_Aftermovie_haabuj.jpg"
+                src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642823570/Brunch_Off_Studios_Aftermovie_glviut.jpg"
                 style={{
                   width: "100%",
                   height: "100%",

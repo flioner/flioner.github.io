@@ -177,6 +177,30 @@
     color: rgb(85, 85, 85);
     transition: font-size 0.7s;
   }
+  .portraitMenu {
+    font-weight: 600;
+    font-size: 3vw;
+    position: absolute;
+    top: 75%;
+    left: -5px;
+    padding: 7px 12px;
+    z-index: 2;
+    background-color: white;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  .portraitMenu2 {
+    font-weight: 600;
+    font-size: 3vw;
+    position: absolute;
+    left: -5px;
+    top: 75%;
+    padding: 7px 12px;
+    z-index: 2;
+    background-color: white;
+    opacity: 0%;
+    transition: opacity 0.5s;
+  }
 }
 /* ------------------- */
 /*  SMALL SCREEN SIZE  */
@@ -208,6 +232,16 @@
   }
   .videoMenu {
     font-size: 2.5vw;
+  }
+  .portraitMenu {
+    font-size: 2.5vw;
+    top: 80%;
+  }
+  .portraitMenu2 {
+    font-size: 2.5vw;
+    top: 80%;
+    opacity: 0%;
+    transition: opacity 0.5s;
   }
 }
 
@@ -265,7 +299,7 @@
   }
   .yt {
     height: 70px;
-    padding-top: 1.7vw;
+    padding-top: 1.5vw;
     transition: opacity 0.3s;
   }
 
@@ -328,6 +362,14 @@
   .videoMenu {
     font-size: 2vw;
   }
+  .portraitMenu {
+    font-size: 2vw;
+  }
+  .portraitMenu2 {
+    font-size: 2vw;
+    opacity: 0%;
+    transition: opacity 0.5s;
+  }
   .showcaseTxt {
     padding-top: 37%;
     font-size: 1.5rem;
@@ -379,6 +421,14 @@
   }
   .videoMenu {
     font-size: 1.5rem;
+  }
+  .portraitMenu {
+    font-size: 1.5rem;
+  }
+  .portraitMenu2 {
+    font-size: 1.5rem;
+    opacity: 0%;
+    transition: opacity 0.5s;
   }
   .showcaseTxt {
     padding-top: 37%;
@@ -639,6 +689,8 @@
   opacity: 100%;
 }
 
+/* Video with side boxes*/
+
 .videoContainer {
   display: flex;
   position: relative;
@@ -678,4 +730,48 @@
   width: 30%;
   height: 100%;
   background-color: #ececec;
+}
+
+/* Portrait Container */
+
+.portraitContainer {
+  display: flex;
+  opacity: 100%;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.portrait4to6 {
+  padding-left: 3%;
+  width: 30%;
+  filter: blur(0px);
+  transition: blur 0.5s;
+}
+
+.portrait4to6_2 {
+  padding-left: 3%;
+  width: 30%;
+  filter: blur(2px);
+  transition: blur 0.5s;
+}
+
+.portrait6to4 {
+  width: 67.6%;
+  filter: blur(0px);
+  transition: blur 0.5s;
+}
+
+.portrait6to4_2 {
+  width: 67.6%;
+  filter: blur(2px);
+  transition: blur 0.5s;
+}
+
+.contContainer {
+  position: relative;
+  height: 100%;
+}
+
+.portraitEquals {
+  width: 30%;
 }
