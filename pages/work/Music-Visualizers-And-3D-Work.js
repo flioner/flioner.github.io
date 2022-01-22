@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import Layout from "../../components/layout";
-import React from "react";
-import ReactPlayer from "react-player";
+import React, { useState } from "react";
 import utilStyles from "../../styles/utils.module.css";
-import Video2 from "../../components/video3";
 import HoverVideoPlayer from "react-hover-video-player";
 
 export default function FirstPost() {
@@ -27,8 +24,11 @@ export default function FirstPost() {
       <div className={utilStyles.paddingBoth}>
         <div className={utilStyles.videoContainer}>
           <div className={utilStyles.videoBoxR}>
-            3D Modular Audio Visualizer
+            <div className={utilStyles.showcaseTxt}>
+              3D Modular Music Visualizer
+            </div>
           </div>
+
           <HoverVideoPlayer
             className={utilStyles.videoContL}
             videoSrc="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642810303/3D_Music_Visualizer_2_zvqubj.mp4"
@@ -51,7 +51,9 @@ export default function FirstPost() {
 
       <div className={utilStyles.paddingBoth}>
         <div className={utilStyles.videoContainer}>
-          <div className={utilStyles.videoBoxL}>Custom 3D Lyric Video</div>
+          <div className={utilStyles.videoBoxL}>
+            <div className={utilStyles.showcaseTxt}>Custom 3D Lyric Video</div>
+          </div>
           <HoverVideoPlayer
             className={utilStyles.videoContR}
             videoSrc="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642811651/Marte_Turista_3D_gyvjqn.mp4"
@@ -74,7 +76,11 @@ export default function FirstPost() {
 
       <div className={utilStyles.paddingBoth}>
         <div className={utilStyles.videoContainer}>
-          <div className={utilStyles.videoBoxR}>2D Audio Visualizer</div>
+          <div className={utilStyles.videoBoxR}>
+            <div className={utilStyles.showcaseTxt}>
+              2D Modular Music Visualizer
+            </div>
+          </div>
           <HoverVideoPlayer
             className={utilStyles.videoContL}
             videoSrc="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642808093/Music_Visualizer_gqtfik.mp4"

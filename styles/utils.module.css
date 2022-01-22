@@ -166,6 +166,17 @@
     color: rgb(66, 66, 66);
     cursor: pointer;
   }
+  .showcaseTxt {
+    text-align: center;
+    padding-top: 35%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 600;
+    font-size: 2.7vw;
+    opacity: 100;
+    color: rgb(85, 85, 85);
+    transition: font-size 0.7s;
+  }
 }
 /* ------------------- */
 /*  SMALL SCREEN SIZE  */
@@ -255,16 +266,25 @@
   .yt {
     height: 70px;
     padding-top: 1.7vw;
+    transition: opacity 0.3s;
   }
 
   .ig {
     padding-top: 0.7vw;
     height: 95px;
+    transition: opacity 0.3s;
   }
 
   .gm {
     height: 75px;
     padding-top: 1vw;
+    transition: opacity 0.3s;
+  }
+  .showcaseTxt {
+    font-size: 1.3rem;
+    padding-left: 12%;
+    padding-right: 12%;
+    transition: font-size 0.7s;
   }
 }
 /* ------------------- */
@@ -307,6 +327,13 @@
   }
   .videoMenu {
     font-size: 2vw;
+  }
+  .showcaseTxt {
+    padding-top: 37%;
+    font-size: 1.5rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    transition: font-size 0.7s;
   }
 }
 
@@ -352,6 +379,13 @@
   }
   .videoMenu {
     font-size: 1.5rem;
+  }
+  .showcaseTxt {
+    padding-top: 37%;
+    font-size: 1.7rem;
+    padding-left: 15%;
+    padding-right: 15%;
+    transition: font-size 0.7s;
   }
 }
 /* ------------------- */
