@@ -2,9 +2,11 @@ import Link from "next/link";
 import utilStyles from "../styles/utils.module.css";
 import React, { useState } from "react";
 import HoverVideoPlayer from "react-hover-video-player";
+import { useVolume } from "../lib/VolumeContext";
 
 const Video = ({ videourl, thumburl, pagelink, descr }) => {
   const [isShown, setIsShown] = useState(false);
+  const { volume, setVolume } = useVolume();
 
   return (
     <div>
@@ -12,7 +14,7 @@ const Video = ({ videourl, thumburl, pagelink, descr }) => {
         videoSrc={videourl}
         loop={true}
         muted={true}
-        volume={0.2}
+        volume={volume}
         pausedOverlay={
           <img
             src={thumburl}

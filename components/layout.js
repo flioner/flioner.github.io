@@ -38,6 +38,7 @@ export default function Layout({ children, home }) {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   return (
     <div className={styles.container}>
       <Head>

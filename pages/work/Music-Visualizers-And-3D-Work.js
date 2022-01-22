@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import utilStyles from "../../styles/utils.module.css";
 import HoverVideoPlayer from "react-hover-video-player";
 import Socials from "../../components/socials";
+import { useVolume } from "../lib/VolumeContext";
 
 export default function FirstPost() {
   return (
