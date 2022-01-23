@@ -18,31 +18,33 @@ const PhotosEquals = ({ photo1, photo2, photo3, url, description }) => {
         >
           <Link href={url}>{description}</Link>
         </div>
-        <a
-          href={url}
+
+        <div // First Image Container
+          //change to link and add href="" to make image clickable
           className={
             isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
           }
         >
-          <img src={photo1} />
-        </a>
+          <img /*Fist Image*/ src={photo1} />
+        </div>
 
-        <a
-          href={url}
+        <div // Second Image Container
+          //change to link and add href="" to make image clickable
           className={
             isShown ? utilStyles.portraitEqualsC : utilStyles.portraitEqualsC2
           }
         >
-          <img src={photo2} />
-        </a>
-        <a
-          href={url}
+          <img /*Second Image*/ src={photo2} />
+        </div>
+
+        <div // Third Image Container
+          //change to link and add href="" to make image clickable
           className={
             isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
           }
         >
-          <img src={photo3} />
-        </a>
+          <img /*Third Image*/ src={photo3} />
+        </div>
       </div>
     </div>
   );

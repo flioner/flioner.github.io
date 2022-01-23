@@ -569,7 +569,7 @@
 .dropdown2 {
   position: fixed;
   padding-top: 20px;
-  bottom: 10px;
+  bottom: 20px;
   z-index: 2;
 }
 

@@ -19,23 +19,24 @@ const Photos = ({ photoTall, photoWide, url, description }) => {
         >
           <Link href={url}>{description}</Link>
         </div>
-        <a
-          href={url}
+
+        <div // First Image Container, Wider than Tall (6 to 4)
+          //change from div to link and add href="" to make image clickable
           className={
             isShown ? utilStyles.portrait6to4_2 : utilStyles.portrait6to4
           }
         >
-          <img src={photoTall} />
-        </a>
+          <img /*Fist Image*/ src={photoTall} />
+        </div>
 
-        <a
-          href={url}
+        <div // Second Image Container, Taller than Wide (4 to 6)
+          //change to link and add href="" to make image clickable
           className={
             isShown ? utilStyles.portrait4to6_2 : utilStyles.portrait4to6
           }
         >
-          <img src={photoWide} />
-        </a>
+          <img /*Second Image*/ src={photoWide} />
+        </div>
       </div>
     </div>
   );

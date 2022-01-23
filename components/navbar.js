@@ -1,4 +1,5 @@
 import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
 const NavBar = ({
   btn1,
@@ -20,20 +21,20 @@ const NavBar = ({
       <div className={utilStyles.dropdown}>
         <button className={utilStyles.dropbtn}>{btn1}</button>
         <div className={utilStyles.dropdowncontent}>
-          <a href={dropurl1}>{drop1}</a>
-          <a href={dropurl2}>{drop2}</a>
-          <a href={dropurl3}>{drop3}</a>
-          <a href={dropurl4}>{drop4}</a>
+          <Link href={dropurl1}>{drop1}</Link>
+          <Link href={dropurl2}>{drop2}</Link>
+          <Link href={dropurl3}>{drop3}</Link>
+          <Link href={dropurl4}>{drop4}</Link>
         </div>
       </div>
       <div className={utilStyles.dropdown}>
         <button className={utilStyles.dropbtn}>
-          <a href={url2}>{btn2}</a>
+          <Link href={url2}>{btn2}</Link>
         </button>
       </div>
       <div className={utilStyles.dropdown}>
         <button className={utilStyles.dropbtn}>
-          <a href={url3}>{btn3}</a>
+          <Link href={url3}>{btn3}</Link>
         </button>
       </div>
     </nav>
