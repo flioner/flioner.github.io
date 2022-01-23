@@ -1,44 +1,50 @@
-import Link from 'next/link';
-import utilStyles from '../styles/utils.module.css';
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
-import { useVolume } from '../lib/VolumeContext';
+import Link from "next/link";
+import utilStyles from "../styles/utils.module.css";
+import React, { useState } from "react";
+import HoverVideoPlayer from "react-hover-video-player";
+import { useVolume } from "../lib/VolumeContext";
 
 const Video = ({ videourl, thumburl, pagelink, descr }) => {
-    const [isShown, setIsShown] = useState(false);
-    const { volume } = useVolume();
+  const [isShown, setIsShown] = useState(false);
+  const { volume } = useVolume();
 
-    return (
-        <div
-            className={utilStyles.player}
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-        >
-            <img
-                className={isShown ? utilStyles.thumb2 : utilStyles.thumb}
-                src={thumburl}
-                width='100%'
-                height='110%'
-            />
-            <div
-                className={
-                    isShown ? utilStyles.playercont2 : utilStyles.playercont
-                }
-            >
-                <div className={utilStyles.videoMenu}>
-                    <Link href={pagelink}>{descr}</Link>
-                </div>
-
-                <ReactPlayer
-                    width='100%'
-                    height='100%'
-                    url={videourl}
-                    volume={volume}
-                    playing={isShown}
-                />
-            </div>
+  return (
+    <div
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
+    >
+      <div className={utilStyles.videoContainer}>
+        <div className={isShown ? utilStyles.videoMenu : utilStyles.videoMenu2}>
+          <Link href={pagelink}>{descr}</Link>
         </div>
-    );
+
+        <HoverVideoPlayer
+          className={utilStyles.videoCont}
+          videoSrc={videourl}
+          loop={true}
+          muted={false}
+          volume={volume}
+          pausedOverlay={
+            <img
+              src={thumburl}
+              style={{
+                width: "100.2%",
+                height: "100.5%",
+                objectFit: "cover",
+              }}
+            />
+          }
+        />
+      </div>
+    </div>
+  );
 };
 
 export default Video;
+
+/*
+          hoverOverlay={
+            <div className={utilStyles.videoMenu}>
+              <Link href={pagelink}>{descr}</Link>
+            </div>
+          } */

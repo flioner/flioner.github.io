@@ -2,9 +2,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import utilStyles from "../styles/utils.module.css";
 
-const Photos = ({ photoTall, photoWide, url, description }) => {
+const PhotosEquals = ({ photo1, photo2, photo3, url, description }) => {
   const [isShown, setIsShown] = useState(false);
-
   return (
     <div
       onMouseEnter={() => setIsShown(true)}
@@ -22,23 +21,31 @@ const Photos = ({ photoTall, photoWide, url, description }) => {
         <a
           href={url}
           className={
-            isShown ? utilStyles.portrait6to4_2 : utilStyles.portrait6to4
+            isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
           }
         >
-          <img src={photoTall} />
+          <img src={photo1} />
         </a>
 
         <a
           href={url}
           className={
-            isShown ? utilStyles.portrait4to6_2 : utilStyles.portrait4to6
+            isShown ? utilStyles.portraitEqualsC : utilStyles.portraitEqualsC2
           }
         >
-          <img src={photoWide} />
+          <img src={photo2} />
+        </a>
+        <a
+          href={url}
+          className={
+            isShown ? utilStyles.portraitEquals : utilStyles.portraitEquals2
+          }
+        >
+          <img src={photo3} />
         </a>
       </div>
     </div>
   );
 };
 
-export default Photos;
+export default PhotosEquals;
