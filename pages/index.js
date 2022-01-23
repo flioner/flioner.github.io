@@ -14,7 +14,7 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
 
-      <div className={utilStyles.paddingBoth}>
+      <div className={utilStyles.paddingBottom}>
         <Video
           videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
           thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D%20Thumbnails/3D_Visualizer_Thumb_hehg2a.jpg"
