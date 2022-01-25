@@ -16,8 +16,8 @@ export default function Home() {
 
       <div className={utilStyles.paddingBottom}>
         <Video
-          videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
-          thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D%20Thumbnails/3D_Visualizer_Thumb_hehg2a.jpg"
+          videourl="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1643098478/3D_Music_Visualizer_Ico_Heal_FH_v1mmgb.mp4"
+          thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643097443/3D%20Thumbnails/3D_Vis_Thumb_00244_hlxq2h.jpg"
           pagelink="/work/Music-Visualizers-And-3D-Work"
           descr="Music Visualizers And 3D Work"
         />
@@ -37,7 +37,7 @@ export default function Home() {
         photo2="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826512/Concert%20Photography/B_W2-min_fgskmb.jpg"
         photo3="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826522/Concert%20Photography/b_w4-min_nxhx9q.jpg"
         description="Concert Photography"
-        url="/work/Portrait-And-Fashion-Photography"
+        url="/work/Concert-Photography"
       ></PhotosEquals>
 
       <Photos

@@ -49,6 +49,13 @@ export default function FirstPost() {
         volume={volume}
       ></VideoLeft>
 
+      <VideoRight
+        videourl="https://res.cloudinary.com/dtnhdghv6/video/upload/v1643097690/bitbird_visualizer_wufyn3.mp4"
+        thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643097422/3D%20Thumbnails/bitbird_thumb_00000_rcafjf.jpg"
+        descr="Spinning Logo Visualizer"
+        volume={volume}
+      ></VideoRight>
+
       <Socials />
     </Layout>
   );
