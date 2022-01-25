@@ -4,8 +4,8 @@ import utilStyles from "../styles/utils.module.css";
 import NavBar from "./navbar";
 import VolumeSlider from "./volumeslider";
 
-const name = "Fabian Lioner";
-export const siteTitle = "Fabian Lioner";
+const name = 'Fabian Lioner';
+export const siteTitle = 'Fabian Lioner';
 
 export default function Layout({ children, home }) {
   return (
@@ -54,9 +54,7 @@ export default function Layout({ children, home }) {
 
       <main>{children}</main>
       {!home && (
-        <>
-          <VolumeSlider />
-        </>
+        <VolumeSlider />
       )}
     </div>
   );
