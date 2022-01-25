@@ -1,5 +1,10 @@
-import "../styles/global.css";
+import { VolumeProvider } from '../lib/VolumeContext';
+import '../styles/global.css';
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+    return (
+        <VolumeProvider>
+            <Component {...pageProps} />
+        </VolumeProvider>
+    );
 }
