@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../../components/layout";
-import React, { useState } from "react";
+import React from "react";
 import utilStyles from "../../styles/utils.module.css";
 import Socials from "../../components/socials";
 import { useVolume } from "../../lib/VolumeContext";

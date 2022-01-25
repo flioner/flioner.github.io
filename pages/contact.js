@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import Layout from "../components/layout";
 import React from "react";
-import ReactPlayer from "react-player";
 import utilStyles from "../styles/utils.module.css";
+import Socials from "../components/socials";
 
 export default function FirstPost() {
   return (
@@ -23,3 +22,5 @@ export default function FirstPost() {
     </Layout>
   );
 }
+
+//<Socials />;

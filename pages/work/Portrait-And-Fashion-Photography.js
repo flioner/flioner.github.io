@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import Layout from "../../components/layout";
 import React from "react";
-import ReactPlayer from "react-player";
 import utilStyles from "../../styles/utils.module.css";
+import Socials from "../../components/socials";
 
 export default function FirstPost() {
   return (
@@ -17,8 +16,8 @@ export default function FirstPost() {
         <div className={utilStyles.menu4}>Portrait And Fashion Photography</div>
         <div className={utilStyles.menu3}>
           <Link href="/">Homepage</Link>
-          <Link href="about-me">About Me</Link>
-          <Link href="contact">Contact</Link>
+          <Link href="../about-me">About Me</Link>
+          <Link href="../contact">Contact</Link>
         </div>
       </div>
 
@@ -47,6 +46,7 @@ export default function FirstPost() {
           src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643096058/Portrait%20and%20Fashion%20Photography/moda_5_gpqqam.jpg"
         />
       </div>
+      <Socials />
     </Layout>
   );
 }

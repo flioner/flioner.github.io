@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Video from "../components/video";
 import Photos from "../components/photos";
 import PhotosEquals from "../components/photos2";
