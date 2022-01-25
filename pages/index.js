@@ -51,38 +51,3 @@ export default function Home() {
     </Layout>
   );
 }
-
-/*
-      <div className={utilStyles.player}>
-        <div className={utilStyles.videoMenu}>
-          <Link href="/work/Music-Visualizers-And-3D-Work">
-            Music Visualizers And 3D Work
-          </Link>
-        </div>
-        <HoverVideoPlayer
-          videoSrc="https://res.cloudinary.com/ds5o5hlrl/video/upload/v1642414331/3D_Music_Visualizer_ibmnba.mp4"
-          loop={true}
-          muted={true}
-          volume={0.2}
-          pausedOverlay={
-            <img
-              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642468821/3D_Visualizer_Thumb_hehg2a.jpg"
-              style={{ width: "100.2%", height: "100.5%", objectFit: "cover" }}
-            />
-          }
-        />
-      </div> */
-
-/*           <a
-            href="/work/Portrait-And-Fashion-Photography"
-            className={utilStyles.portrait6to4}
-          >
-            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642326044/moda_3_l1uu2v.jpg" />
-          </a>
-
-          <a
-            href="/work/Portrait-And-Fashion-Photography"
-            className={utilStyles.portrait4to6}
-          >
-            <img src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642378891/Moda_1_wyt57z.jpg" />
-          </a> */
