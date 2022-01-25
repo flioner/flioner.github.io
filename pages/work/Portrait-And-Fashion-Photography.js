@@ -21,6 +21,32 @@ export default function FirstPost() {
           <Link href="contact">Contact</Link>
         </div>
       </div>
+
+      <div className={utilStyles.collage_Big_Tall_Left_Container}>
+        <img
+          className={utilStyles.big_tall_left}
+          src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642378891/Portrait%20and%20Fashion%20Photography/Moda_1_wyt57z.jpg"
+        />
+        <img
+          className={utilStyles.small_tall_top_right}
+          src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642378995/Portrait%20and%20Fashion%20Photography/moda_2_sm3hls.jpg"
+        />
+        <img
+          className={utilStyles.small_wide_bottom_right}
+          src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642326044/Portrait%20and%20Fashion%20Photography/moda_3_l1uu2v.jpg"
+        />
+      </div>
+
+      <div className={utilStyles.ImgFlexContainer}>
+        <img
+          className={utilStyles.portrait4to6_2_2}
+          src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643096058/Portrait%20and%20Fashion%20Photography/moda_4_imka89.jpg"
+        />
+        <img
+          className={utilStyles.portrait6to4}
+          src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643096058/Portrait%20and%20Fashion%20Photography/moda_5_gpqqam.jpg"
+        />
+      </div>
     </Layout>
   );
 }
