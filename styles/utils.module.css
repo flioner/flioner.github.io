@@ -164,6 +164,7 @@
     opacity: 100%;
     z-index: 2;
     transition: opacity 0.5s;
+    pointer-events: all;
   }
   .videoMenu2 {
     display: inline-block;
@@ -180,6 +181,7 @@
     opacity: 0%;
     z-index: 2;
     transition: opacity 0.5s;
+    pointer-events: none;
   }
   .videoMenu:hover {
     color: rgb(66, 66, 66);
@@ -514,6 +516,7 @@
     margin-right: -20px;
   }
 }
+
 /* ------------------- */
 /* RESPONISVE TEXT END */
 /* ------------------- */
@@ -605,6 +608,7 @@
   display: inline-table;
   position: absolute;
   bottom: -200px;
+  left: 100px;
   background-color: #f1f1f1;
   min-width: 5px;
   padding: 17px 11px;
@@ -613,13 +617,14 @@
   z-index: 0;
   opacity: 0%;
   height: 0%;
-  transition: opacity 0.4s, height 0.4s, bottom 0.7s;
+  transition: opacity 0.4s, height 0.4s, bottom 0.7s, left 1.7s;
 }
 
 .dropdowncontent3 {
   display: inline-table;
   position: absolute;
   bottom: 57px;
+  left: 0px;
   background-color: #f1f1f1;
   min-width: 5px;
   padding: 17px 11px;
@@ -628,7 +633,7 @@
   z-index: 2;
   opacity: 100%;
   height: 200px;
-  transition: opacity 0.4s, height 0.4s, bottom 0.3s;
+  transition: opacity 0.4s, height 0.4s, bottom 0.3s, left 0.7s;
 }
 
 .slider2 {
@@ -868,11 +873,18 @@
   transition: opacity 0.5s;
 }
 
+.portrait4to6:hover {
+  cursor: pointer;
+}
+
 .portrait4to6_2 {
   padding-left: 3%;
   width: 30%;
   opacity: 100%;
   transition: opacity 0.5s;
+}
+.portrait4to6_2:hover {
+  cursor: pointer;
 }
 .portrait4to6_2_2 {
   padding-right: 3%;
@@ -880,17 +892,25 @@
   opacity: 100%;
   transition: opacity 0.5s;
 }
-
+.portrait4to6_2_2:hover {
+  cursor: pointer;
+}
 .portrait6to4 {
   width: 67.6%;
   opacity: 95%;
   transition: opacity 0.5s;
+}
+.portrait6to4:hover {
+  cursor: pointer;
 }
 
 .portrait6to4_2 {
   width: 67.6%;
   opacity: 100%;
   transition: opacity 0.5s;
+}
+.portrait6to4_2:hover {
+  cursor: pointer;
 }
 
 .contContainer {
@@ -962,7 +982,9 @@
 }
 /* Two Uneven Images Template END */
 
-/* Big TALL Img Left + Medium TALL Img Top Right + Small WIDE Img Bottom Right  */
+/* TALL   TALL RIGHT
+   LEFT   WIDE RIGHT*/
+
 .collage_Big_Tall_Left_Container {
   display: inline-grid;
   grid-template-columns: [col1] 36.9% [col2] 22% [col3] 2% [col4] 39.5% [col5] 30%;
@@ -975,11 +997,17 @@
   grid-row-start: row1;
   grid-row-end: row4;
 }
+.big_tall_left:hover {
+  cursor: pointer;
+}
 .small_tall_top_right {
   grid-column-start: col4;
   grid-column-end: col5;
   grid-row-start: row1;
   grid-row-end: row2;
+}
+.small_tall_top_right:hover {
+  cursor: pointer;
 }
 
 .small_wide_bottom_right {
@@ -988,9 +1016,14 @@
   grid-row-start: row3;
   grid-row-end: row4;
 }
-/*  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); */
+.small_wide_bottom_right:hover {
+  cursor: pointer;
+}
+/* TALL   TALL RIGHT
+   LEFT   WIDE RIGHT END*/
 
-/* TALL LEFT TALL RIGHT TALL RIGHT */
+/* TALL   TALL RIGHT 
+   LEFT   TALL RIGHT */
 .collage_Big_Tall_Left_Container2 {
   display: grid;
   grid-template-columns: [col1] 27.4% [col2] 38.2% [col3] 2% [col4] 32% [col5] 30%;
@@ -1003,6 +1036,10 @@
   grid-row-end: row2;
 }
 
+.small_tall_top_right2:hover {
+  cursor: pointer;
+}
+
 .small_tall_bottom_right {
   grid-column-start: col4;
   grid-column-end: col5;
@@ -1010,26 +1047,41 @@
   grid-row-end: row4;
 }
 
-/* TALL LEFT TALL RIGHT TALL RIGHT END*/
+.small_tall_bottom_right:hover {
+  cursor: pointer;
+}
+
+/* TALL   TALL RIGHT 
+   LEFT   TALL RIGHT END*/
+
+/* TALL LEFT    TALL 
+   TALL LEFT   RIGHT */
 
 .collage_Big_Tall_Right_Container {
   display: grid;
-  padding: 3% 0%;
   grid-template-columns: [col1] 15% [col2] 17% [col3] 2% [col4] 65.6% [col5] 30%;
   grid-template-rows: [row1] 20% [row2] 31% [row3] 14.85% [row4]14.85%;
 }
 .collage_Big_Tall_Right_Container2 {
   display: grid;
-  padding-bottom: 3%;
   grid-template-columns: [col1] 17% [col2] 15% [col3] 2% [col4] 65.6% [col5] 30%;
   grid-template-rows: [row1] 20% [row2] 31% [row3] 14.85% [row4]14.85%;
 }
 
+.collage_Big_Tall_Right_Container2_2 {
+  display: grid;
+  grid-template-columns: [col1] 17% [col2] 15% [col3] 2% [col4] 65.6% [col5] 30%;
+  grid-template-rows: [row1] 20% [row2] 31% [row3] 14.85% [row4]14.85%;
+  pointer-events: none;
+}
 .small_tall_top_left {
   grid-column-start: col1;
   grid-column-end: col3;
   grid-row-start: row1;
   grid-row-end: row2;
+}
+.small_tall_top_left:hover {
+  cursor: pointer;
 }
 
 .small_tall_bottom_left {
@@ -1038,6 +1090,9 @@
   grid-row-start: row3;
   grid-row-end: row4;
 }
+.small_tall_bottom_left:hover {
+  cursor: pointer;
+}
 
 .big_tall_right {
   grid-column-start: col4;
@@ -1045,7 +1100,13 @@
   grid-row-start: row1;
   grid-row-end: row4;
 }
+.big_tall_right:hover {
+  cursor: pointer;
+}
+/* TALL LEFT    TALL 
+   TALL LEFT   RIGHT  END*/
 
+/* FIT-SCREEN */
 .fitScreen2 {
   position: relative;
   width: 100%;
@@ -1054,3 +1115,55 @@
   position: relative;
   width: 100%;
 }
+/* FIT-SCREEN END */
+
+/* MODAL */
+.fitScreen4 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.visible {
+  display: flex;
+}
+.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.modal {
+  position: fixed;
+  height: 90%;
+  max-height: 136.5vw;
+  z-index: 99;
+  top: 5vh;
+  transition: width 0.3s, top 0.3s;
+  opacity: 100%;
+  box-shadow: 0px 0px 3800px 38000px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s;
+  object-fit: cover;
+}
+.modal2 {
+  position: fixed;
+  height: 0%;
+  max-height: 136.5vw;
+  z-index: 0;
+  top: 5vh;
+  opacity: 0%;
+  transition: opacity 0.3s;
+}
+
+.modal3 {
+  width: 500%;
+  height: 500%;
+  top: -20%;
+  position: fixed;
+  opacity: 0%;
+  z-index: 98;
+}
+
+.modal4 {
+  display: none;
+}
+/* MODAL END */
