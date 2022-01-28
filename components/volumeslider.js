@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useVolume } from "../lib/VolumeContext";
 import utilStyles from "../styles/utils.module.css";
 
@@ -39,42 +39,79 @@ const VolumeSlider = () => {
     },
   });
 
-  return (
-    <div
-      onMouseEnter={handleToggleOn}
-      onMouseLeave={handleToggleOff}
-      className={utilStyles.floating}
-    >
-      <div className={isActive ? utilStyles.dropdown2_2 : utilStyles.dropdown2}>
-        <button //onClick={handleToggle}
-          onClick={handleToggle}
-          className={utilStyles.dropbtn2}
-        >
-          <img
-            className={isActive ? utilStyles.icon2 : utilStyles.icon}
-            src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642575539/Icons/Volume_Icon_00000_cd3dxz.jpg"
-          />
-        </button>
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
 
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  return (
+    <div onMouseLeave={handleToggleOff}>
+      <div className={utilStyles.floating}>
         <div
-          className={
-            isActive ? utilStyles.dropdowncontent3 : utilStyles.dropdowncontent2
-          }
+          className={showButton ? utilStyles.dropdown4_2 : utilStyles.dropdown4}
         >
-          <div className={isActive ? utilStyles.slider2 : utilStyles.slider}>
-            <ThemeProvider theme={theme}>
-              <Box height={200}>
-                <Slider
-                  size="small"
-                  value={parseInt(volume * 100)}
-                  onChange={handleChange}
-                  aria-label="Small"
-                  valueLabelDisplay="auto"
-                  orientation="vertical"
-                  color="neutral"
-                />
-              </Box>
-            </ThemeProvider>
+          <button
+            onClick={scrollToTop}
+            className={isActive ? utilStyles.dropbtn3 : utilStyles.dropbtn3_2}
+          >
+            <img
+              className={utilStyles.icon3}
+              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643337785/Icons/Arrow_top_h0bxpd.png"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div onMouseEnter={handleToggleOn} className={utilStyles.floating}>
+        <div
+          className={isActive ? utilStyles.dropdown2_2 : utilStyles.dropdown2}
+        >
+          <button //onClick={handleToggle}
+            onClick={handleToggle}
+            className={utilStyles.dropbtn2}
+          >
+            <img
+              className={isActive ? utilStyles.icon2 : utilStyles.icon}
+              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642575539/Icons/Volume_Icon_00000_cd3dxz.jpg"
+            />
+          </button>
+
+          <div
+            className={
+              isActive
+                ? utilStyles.dropdowncontent3
+                : utilStyles.dropdowncontent2
+            }
+          >
+            <div className={isActive ? utilStyles.slider2 : utilStyles.slider}>
+              <ThemeProvider theme={theme}>
+                <Box height={200}>
+                  <Slider
+                    size="small"
+                    value={parseInt(volume * 100)}
+                    onChange={handleChange}
+                    aria-label="Small"
+                    valueLabelDisplay="auto"
+                    orientation="vertical"
+                    color="neutral"
+                  />
+                </Box>
+              </ThemeProvider>
+            </div>
           </div>
         </div>
       </div>
