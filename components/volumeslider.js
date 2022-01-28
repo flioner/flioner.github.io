@@ -81,7 +81,7 @@ const VolumeSlider = () => {
           className={isActive ? utilStyles.dropdown2_2 : utilStyles.dropdown2}
         >
           <button //onClick={handleToggle}
-            onClick={handleToggle}
+            onClick={handleToggleOff}
             className={isActive ? utilStyles.dropbtn2 : utilStyles.dropbtn2_2}
           >
             <img
