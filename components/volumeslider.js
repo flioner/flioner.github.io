@@ -76,12 +76,12 @@ const VolumeSlider = () => {
         </div>
       </div>
 
-      <div onMouseEnter={handleToggleOn} className={utilStyles.floating}>
+      <div /*onMouseEnter={handleToggleOn}*/ className={utilStyles.floating}>
         <div
           className={isActive ? utilStyles.dropdown2_2 : utilStyles.dropdown2}
         >
           <button //onClick={handleToggle}
-            onClick={handleToggleOff}
+            onClick={handleToggle}
             className={isActive ? utilStyles.dropbtn2 : utilStyles.dropbtn2_2}
           >
             <img
