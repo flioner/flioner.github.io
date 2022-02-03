@@ -40,6 +40,13 @@
 /*   TINY SCREEN SIZE  */
 /* ------------------- */
 @media (min-width: 10px) {
+  .bottomButtonCont {
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
   .contContContainer {
     position: relative;
     left: 0%;
@@ -366,6 +373,9 @@
 /* MEDIUM SCREEN SIZE  */
 /* ------------------- */
 @media (min-width: 750px) {
+  .bottomButtonCont {
+    font-size: 1.2rem;
+  }
   .headingLg {
     font-size: calc(1rem + 0.9vw);
   }
@@ -1365,13 +1375,6 @@
 .bottomButton {
   position: relative;
   left: 50%;
-}
-.bottomButtonCont {
-  color: rgb(216, 216, 216);
-  font-weight: 600;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-  cursor: pointer;
 }
 
 .bottomButtonCont:hover {
