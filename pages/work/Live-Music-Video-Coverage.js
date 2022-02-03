@@ -20,8 +20,8 @@ export default function FirstPost() {
         <div className={utilStyles.menu4}>Live Music Video Coverage</div>
         <div className={utilStyles.menu3}>
           <Link href="/">Homepage</Link>
-          <Link href="about-me">About Me</Link>
-          <Link href="contact">Contact</Link>
+          <Link href="../about-me">About Me</Link>
+          <Link href="../contact">Contact</Link>
         </div>
       </div>
 
