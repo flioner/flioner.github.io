@@ -1378,3 +1378,35 @@
   color: rgb(179, 179, 179);
   transition: color 0.3s;
 }
+
+.popUp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
+
+.popUpMainText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 15px;
+}
+
+.popUpSecText {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.popUpThiText {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #868686;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.popUpThiText:hover {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+  transition: color 0.3s;
+}

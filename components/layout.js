@@ -4,17 +4,20 @@ import utilStyles from "../styles/utils.module.css";
 import NavBar from "./navbar";
 import VolumeSlider from "./volumeslider";
 
-const name = 'Fabian Lioner';
-export const siteTitle = 'Fabian Lioner';
+const name = "Fabian Lioner";
+export const siteTitle = "Fabian Lioner";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643859382/Icons/LNR_uiyfym.ico"
+        />
         <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
+          name="Online Portfolio"
+          content="My Personal Photography & 3D Work Portfolio"
         />
       </Head>
 
@@ -53,9 +56,7 @@ export default function Layout({ children, home }) {
       )}
 
       <main>{children}</main>
-      {!home && (
-        <VolumeSlider />
-      )}
+      {!home && <VolumeSlider />}
     </div>
   );
 }
