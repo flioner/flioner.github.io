@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../../components/layout";
 import React from "react";
 import utilStyles from "../../styles/utils.module.css";
-import Socials from "../../components/socials";
+import { Socials, BottomName } from "../../components/socials";
 
 import {
   CollageAllTallBigRight,
@@ -77,6 +77,7 @@ export default function FirstPost() {
         </div>
       </div>
       <Socials />
+      <BottomName />
     </Layout>
   );
 }

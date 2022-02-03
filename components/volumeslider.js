@@ -70,7 +70,7 @@ const VolumeSlider = () => {
           >
             <img
               className={utilStyles.icon3}
-              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643337785/Icons/Arrow_top_h0bxpd.png"
+              src="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1643855521/Icons/Up_Arrow_wcpdq2.png"
             />
           </button>
         </div>

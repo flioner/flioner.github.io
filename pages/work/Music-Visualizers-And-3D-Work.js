@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../../components/layout";
 import React from "react";
 import utilStyles from "../../styles/utils.module.css";
-import Socials from "../../components/socials";
+import { Socials, BottomName } from "../../components/socials";
 import { useVolume } from "../../lib/VolumeContext";
 import VideoLeft from "../../components/videoleft";
 import VideoRight from "../../components/videoright";
@@ -57,6 +57,7 @@ export default function FirstPost() {
       ></VideoRight>
 
       <Socials />
+      <BottomName />
     </Layout>
   );
 }

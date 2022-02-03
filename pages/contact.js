@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import React from "react";
 import utilStyles from "../styles/utils.module.css";
-import Socials from "../components/socials";
+import { Socials, BottomName } from "../components/socials";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function FirstPost() {
@@ -62,6 +62,8 @@ export default function FirstPost() {
             Submit
           </button>
         </form>
+
+        <Socials className={utilStyles.seventyFive} />
       </div>
     </Layout>
   );

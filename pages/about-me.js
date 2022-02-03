@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import React from "react";
 import utilStyles from "../styles/utils.module.css";
-import Socials from "../components/socials";
+import { Socials } from "../components/socials";
 
 export default function FirstPost() {
   return (

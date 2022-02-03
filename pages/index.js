@@ -5,7 +5,7 @@ import React from "react";
 import Video from "../components/video";
 import Photos from "../components/photos";
 import PhotosEquals from "../components/photos2";
-import Socials from "../components/socials";
+import { Socials, BottomNameIndex } from "../components/socials";
 
 export default function Home() {
   return (
@@ -48,6 +48,7 @@ export default function Home() {
       ></Photos>
 
       <Socials />
+      <BottomNameIndex />
     </Layout>
   );
 }
