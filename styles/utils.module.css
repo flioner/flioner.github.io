@@ -278,28 +278,20 @@
   transition: opacity 0.5s;
 }
 
-.portrait4to6:hover {
-  cursor: pointer;
-}
-
 .portrait4to6_2 {
   padding-left: 3%;
   width: 30%;
   opacity: 100%;
   transition: opacity 0.5s;
 }
-.portrait4to6_2:hover {
-  cursor: pointer;
-}
+
 .portrait4to6_2_2 {
   padding-right: 3%;
   width: 30%;
   opacity: 100%;
   transition: opacity 0.5s;
 }
-.portrait4to6_2_2:hover {
-  cursor: pointer;
-}
+
 /* Horizontal */
 
 .portrait6to4 {
@@ -309,9 +301,6 @@
   opacity: 95%;
   transition: opacity 0.5s;
 }
-.portrait6to4:hover {
-  cursor: pointer;
-}
 
 .portrait6to4_2 {
   border-radius: min(1.2vw, 10px);
@@ -319,9 +308,6 @@
   width: 67.6%;
   opacity: 100%;
   transition: opacity 0.5s;
-}
-.portrait6to4_2:hover {
-  cursor: pointer;
 }
 
 .contContainer {
@@ -1087,7 +1073,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: max(min(3vw, 23px), 5px);
-  padding-bottom: max(min(0.2vw, 10px), 0px);
+  padding-bottom: max(min(0.2vw, 10px), 10px);
 }
 .menu3 {
   /* Navbar on the right */
