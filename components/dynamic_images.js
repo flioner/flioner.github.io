@@ -174,12 +174,14 @@ const TwoImageCollageTallLeft = ({ imgLeft, imgRight }) => {
         />
       </div>
       <div className={utilStyles.ImgFlexContainer}>
-        <img
-          className={utilStyles.portrait4to6_2_2}
-          src={imgLeft}
-          onMouseEnter={() => setImg(imgLeft)}
-          onClick={() => setIsVisible(true)}
-        />
+        <div className={utilStyles.portrait4to6_2_2}>
+          <img
+            className={utilStyles.portraitCorners}
+            src={imgLeft}
+            onMouseEnter={() => setImg(imgLeft)}
+            onClick={() => setIsVisible(true)}
+          />
+        </div>
         <img
           className={utilStyles.portrait6to4}
           src={imgRight}

@@ -35,7 +35,10 @@ const Photos = ({ photoTall, photoWide, url, description }) => {
             isShown ? utilStyles.portrait4to6_2 : utilStyles.portrait4to6
           }
         >
-          <img /*Second Image*/ src={photoWide} />
+          <img
+            className={utilStyles.portraitCorners}
+            /*Second Image*/ src={photoWide}
+          />
         </div>
       </div>
     </div>

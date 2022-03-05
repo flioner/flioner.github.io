@@ -34,7 +34,10 @@ const PhotosEquals = ({ photo1, photo2, photo3, url, description }) => {
             isShown ? utilStyles.portraitEqualsC : utilStyles.portraitEqualsC2
           }
         >
-          <img /*Second Image*/ src={photo2} />
+          <img
+            className={utilStyles.portraitCorners}
+            /*Second Image*/ src={photo2}
+          />
         </div>
 
         <div // Third Image Container
