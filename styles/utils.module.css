@@ -1203,7 +1203,7 @@
 
 .showcaseTxt {
   text-align: center;
-  padding-top: max(min(5vw, 37%), 35%);
+  padding-top: max(min(5vw, 35%), 35%);
   padding-left: 15%;
   padding-right: 15%;
   font-weight: 600;

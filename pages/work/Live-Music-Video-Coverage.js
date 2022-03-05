@@ -40,16 +40,16 @@ export default function FirstPost() {
       ></VideoLeft>
 
       <VideoRight
-        videourl="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642817418/Tercer_A%C3%B1o_Festival_Official_Aftermovie_fswyvk.mp4"
-        thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817460/Live%20Thumbs/Tercer_Festival_Aftermovie_00532_cus3ns.jpg"
-        descr="Tercer Año Festival Aftermovie"
+        videourl="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642817731/Sofish_Corazonada_Aftermovie_sdoh1i.mp4"
+        thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817869/Live%20Thumbs/Sofish_Corazonada_Thumb_00758_gwfrdg.jpg"
+        descr="Sofish Corazonada Aftermovie"
         volume={volume}
       ></VideoRight>
 
       <VideoLeft
-        videourl="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642817731/Sofish_Corazonada_Aftermovie_sdoh1i.mp4"
-        thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817869/Live%20Thumbs/Sofish_Corazonada_Thumb_00758_gwfrdg.jpg"
-        descr="Sofish Corazonada Aftermovie"
+        videourl="https://res.cloudinary.com/dtnhdghv6/video/upload/v1642817418/Tercer_A%C3%B1o_Festival_Official_Aftermovie_fswyvk.mp4"
+        thumburl="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642817460/Live%20Thumbs/Tercer_Festival_Aftermovie_00532_cus3ns.jpg"
+        descr="Tercer Año Festival Aftermovie"
         volume={volume}
       ></VideoLeft>
 
