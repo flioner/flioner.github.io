@@ -17,7 +17,7 @@ export default function Layout({ children, home }) {
         />
         <meta
           name="Online Portfolio"
-          content="My Personal Photography & 3D Work Portfolio"
+          content="My Personal Photography & 3D Work Portfolio - Music visualizers, animated music videos, lyric videos, concert photography, music festival aftermovies, recording live sessions, fahsion photography, portrait photography and more!"
         />
       </Head>
 

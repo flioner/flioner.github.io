@@ -10,6 +10,11 @@ export default function FirstPost() {
     <Layout blackbg>
       <Head>
         <title>Fabian Lioner - About Me</title>
+        <meta
+          name="Fabian Lioner - About Me"
+          content="I am a Photographer and 3D Artist, I primarily work on music videos, music visualizers as well as photo and
+            video coverage of concerts and festivals!"
+        />
       </Head>
 
       <div className={utilStyles.menu2}>

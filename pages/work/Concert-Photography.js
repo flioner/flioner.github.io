@@ -16,6 +16,10 @@ export default function FirstPost() {
       <div className={utilStyles.fitScreen}>
         <Head>
           <title>Concert Photography</title>
+          <meta
+            name="Concert Photography"
+            content="No matter how much I love creating videos, there are some moments that only photography can capture, here are some of my favorite shots from artists and live music events"
+          />
         </Head>
         <div className={utilStyles.menu2}>
           <div className={utilStyles.menu4}>Concert Photography</div>

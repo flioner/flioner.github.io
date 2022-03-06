@@ -17,6 +17,10 @@ export default function FirstPost() {
     <Layout blackbg>
       <Head>
         <title>Music Visualizers And 3D Work</title>
+        <meta
+          name="Music Visualizers, Animations and 3D Work"
+          content="Animations can make music come to life, that's why I've been working with After Effects for more than 7 years now, to create the best animations and visuals to complement songs I love"
+        />
       </Head>
 
       <div className={utilStyles.menu2}>

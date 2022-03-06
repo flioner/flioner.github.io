@@ -15,6 +15,10 @@ export default function FirstPost() {
       <div className={utilStyles.fitScreen3}>
         <Head>
           <title>Portrait And Fashion Photography</title>
+          <meta
+            name="Portrait, Event and Fashion Photography"
+            content="Photo Sessions, Fashion Photography, Portraits, Weddings and more! It pays off to take risks and do experimental photography to get the best shots possible."
+          />
         </Head>
         <div className={utilStyles.fitScreen2}>
           <div className={utilStyles.menu2}>

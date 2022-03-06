@@ -23,6 +23,10 @@ export default function FirstPost() {
       <Layout>
         <Head>
           <title>Fabian Lioner - Contact</title>
+          <meta
+            name="Fabian Lioner - Contact"
+            content="If you need any photography or video work done, feel free to hit me up, write an email or message me on social media!"
+          />
         </Head>
         <div className={utilStyles.contContContainer}>
           <div className={utilStyles.menu2}>

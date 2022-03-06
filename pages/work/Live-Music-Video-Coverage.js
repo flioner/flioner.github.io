@@ -13,7 +13,11 @@ export default function FirstPost() {
   return (
     <Layout blackbg>
       <Head>
-        <title>Live Music Video Coverage</title>
+        <title>Live Music Video Coverage, Concerts, Music Festivals</title>
+        <meta
+          name="Live Music Coverage"
+          content="Throughout the years I've worked with artist to make great audiovisual content, from recording a live session, to making an aftermovie covering a full music festival, I love a challenge!"
+        />
       </Head>
 
       <div className={utilStyles.menu2}>
