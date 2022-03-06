@@ -1189,9 +1189,13 @@
 
 .showcaseTxt {
   text-align: center;
-  padding-top: max(min(5vw, 35%), 35%);
-  padding-left: 15%;
-  padding-right: 15%;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 11%;
+  padding-right: 11%;
   font-weight: 600;
   font-size: max(min(2.4vw, 1.8rem), 0.7rem);
   opacity: 100;
