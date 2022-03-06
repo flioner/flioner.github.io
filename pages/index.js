@@ -12,6 +12,10 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name="google-site-verification"
+          content="54_CR_NP93RWiR-8MzxV7SPI1nF5FCOoLga-AhfmNE0"
+        />
       </Head>
 
       <div className={utilStyles.paddingBottom}>
