@@ -179,6 +179,9 @@
 .paddingBottom {
   padding-bottom: 3%;
 }
+.paddingBottomMedium {
+  padding-bottom: 2.3%;
+}
 .paddingBoth {
   padding: 20px 0px;
 }
@@ -285,6 +288,20 @@
   transition: opacity 0.5s;
 }
 
+.portrait4to6v2 {
+  padding-right: 3%;
+  width: 30%;
+  opacity: 95%;
+  transition: opacity 0.5s;
+}
+
+.portrait4to6_2v2 {
+  padding-right: 3%;
+  width: 30%;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
 .portrait4to6_2_2 {
   padding-right: 3%;
   width: 30%;
@@ -351,7 +368,7 @@
 /* Universal Flex Image Container */
 .ImgFlexContainer {
   display: flex;
-  padding: 3% 0%;
+  padding: 2% 0%;
   width: 100%;
   height: 100%;
 }
@@ -549,6 +566,7 @@
 }
 
 .modal {
+  border-radius: 10px;
   position: fixed;
   height: 90%;
   max-height: 136.5vw;

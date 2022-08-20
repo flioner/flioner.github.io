@@ -3,7 +3,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import React from "react";
 import Video from "../components/video";
-import Photos from "../components/photos";
+import { Photos, Photos2 } from "../components/photos";
 import PhotosEquals from "../components/photos2";
 import { Socials, BottomNameIndex } from "../components/socials";
 
@@ -45,11 +45,18 @@ export default function Home() {
       ></PhotosEquals>
 
       <Photos
-        photoTall="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642326044/Portrait%20and%20Fashion%20Photography/moda_3_l1uu2v.jpg"
         photoWide="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642378891/Portrait%20and%20Fashion%20Photography/Moda_1_wyt57z.jpg"
+        photoTall="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642326044/Portrait%20and%20Fashion%20Photography/moda_3_l1uu2v.jpg"
         description="Portrait & Fashion Photography"
         url="/work/Portrait-And-Fashion-Photography"
       ></Photos>
+
+      <Photos2
+        photoTall="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1660957981/Street%20Photography/Street_3_ewi7eg.jpg"
+        photoWide="https://res.cloudinary.com/dgb1oqgt3/image/upload/v1660957982/Street%20Photography/Street_thumb_eexrfi.jpg"
+        description="Street Photography"
+        url="/work/Street-Photography"
+      ></Photos2>
 
       <Socials />
       <BottomNameIndex />

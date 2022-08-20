@@ -11,10 +11,12 @@ const NavBar = ({
   drop2,
   drop3,
   drop4,
+  drop5,
   dropurl1,
   dropurl2,
   dropurl3,
   dropurl4,
+  dropurl5,
 }) => {
   return (
     <nav className={utilStyles.menu}>
@@ -25,6 +27,7 @@ const NavBar = ({
           <Link href={dropurl2}>{drop2}</Link>
           <Link href={dropurl3}>{drop3}</Link>
           <Link href={dropurl4}>{drop4}</Link>
+          <Link href={dropurl5}>{drop5}</Link>
         </div>
       </div>
       <div className={utilStyles.dropdown}>

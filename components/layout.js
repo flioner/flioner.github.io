@@ -43,6 +43,10 @@ export default function Layout({ children, home }) {
             drop4="Portrait & Fashion Photography"
             dropurl4="/work/Portrait-And-Fashion-Photography"
             //
+            // Dropdown Option 4
+            drop5="Street Photography"
+            dropurl5="/work/Street-Photography"
+            //
             // Button 1
             btn2="About Me"
             url2="about-me"

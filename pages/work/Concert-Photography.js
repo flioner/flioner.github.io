@@ -32,7 +32,7 @@ export default function FirstPost() {
       </div>
 
       <div className={utilStyles.fitScreen}>
-        <div className={utilStyles.paddingBottom}>
+        <div className={utilStyles.paddingBottomMedium}>
           <CollageAllTallBigRight
             imgTop={
               "https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826507/Concert%20Photography/_MG_4270-min_vfepya.jpg"
@@ -48,7 +48,7 @@ export default function FirstPost() {
           </CollageAllTallBigRight>
         </div>
 
-        <div className={utilStyles.paddingBottom}>
+        <div className={utilStyles.paddingBottomMedium}>
           <CollageAllTallBigLeft
             imgTop={
               "https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826512/Concert%20Photography/B_W2-min_fgskmb.jpg"
@@ -64,7 +64,7 @@ export default function FirstPost() {
           </CollageAllTallBigLeft>
         </div>
 
-        <div className={utilStyles.paddingBottom}>
+        <div className={utilStyles.paddingBottomMedium}>
           <CollageAllTallBigRight
             imgTop={
               "https://res.cloudinary.com/dgb1oqgt3/image/upload/v1642826518/Concert%20Photography/_MG_4566-min_x9tgze.jpg"

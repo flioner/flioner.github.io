@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import React from "react";
 import utilStyles from "../styles/utils.module.css";
 import { Socials } from "../components/socials";
+import { BottomName } from "../components/socials";
 
 export default function FirstPost() {
   return (
@@ -46,6 +47,7 @@ export default function FirstPost() {
         </div>
       </div>
       <Socials></Socials>
+      <BottomName />
     </Layout>
   );
 }

@@ -45,4 +45,47 @@ const Photos = ({ photoTall, photoWide, url, description }) => {
   );
 };
 
-export default Photos;
+const Photos2 = ({ photoTall, photoWide, url, description }) => {
+  const [isShown, setIsShown] = useState(false);
+
+  return (
+    <div
+      onMouseEnter={() => setIsShown(true)}
+      onMouseLeave={() => setIsShown(false)}
+      className={utilStyles.contContainer}
+    >
+      <div className={utilStyles.portraitContainer}>
+        <div
+          className={
+            isShown ? utilStyles.portraitMenu : utilStyles.portraitMenu2
+          }
+        >
+          <Link href={url}>{description}</Link>
+        </div>
+
+        <div // First Image Container, Taller than Wide (4 to 6)
+          //change to link and add href="" to make image clickable
+          className={
+            isShown ? utilStyles.portrait4to6_2v2 : utilStyles.portrait4to6v2
+          }
+        >
+          <img
+            className={utilStyles.portraitCorners}
+            /*First Image*/ src={photoTall}
+          />
+        </div>
+
+        <div // Second Image Container, Wider than Tall (6 to 4)
+          //change from div to link and add href="" to make image clickable
+          className={
+            isShown ? utilStyles.portrait6to4_2 : utilStyles.portrait6to4
+          }
+        >
+          <img /*Second Image*/ src={photoWide} />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export { Photos, Photos2 };
