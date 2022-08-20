@@ -566,7 +566,6 @@
 }
 
 .modal {
-  border-radius: 10px;
   position: fixed;
   height: 90%;
   max-height: 136.5vw;
