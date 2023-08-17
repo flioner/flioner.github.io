@@ -627,7 +627,7 @@
 }
 .bottomButton {
   position: relative;
-  left: 50%;
+  margin: auto;
 }
 
 .popUp {
